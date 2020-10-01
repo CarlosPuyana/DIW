@@ -1,0 +1,102 @@
+body {
+    height: 700px;
+    overflow-x: hidden;
+}
+
+aside {
+    position: relative;
+    left: 10px;
+    background-color: #EFE8E6;
+    height: 700px;
+    width: 284px;
+}
+
+section{
+    position: relative;
+    top: -700px;
+    left: 340px;
+    background-color:#F8F7F7;
+    width: 1150px;
+    height: 700px;
+}
+
+p{
+    color: black;
+}
+
+#icono {
+    width: 1.4em;
+}
+
+#icono-persona {
+    
+    width: 1.4em;
+}
+
+#principal {
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}
+
+#cont {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+
+#acad {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+} 
+
+
+#parrafos {
+    position: relative;
+    top: 0px;
+}
+
+#sobre-mi {
+    position: absolute;
+    top: -18px;
+    left: 32px;
+}
+
+#experiencias {
+    position: absolute;
+    top: 115px;
+    left: 32px;
+}
+
+
+@media screen and (max-width:700px) {
+    * {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    aside {
+        position: relative;
+        left: 10px;
+        background-color: #EFE8E6;
+        height: 700px;
+        width: 100%;
+    }
+
+    section{
+        position: relative;
+        top: 5px;
+        left: 10px;
+        background-color: #F8F7F7;
+        width: 100%;
+        height: 1000px;
+    }
+
+    #experiencias {
+        position: absolute;
+        top: 260px;
+        left: 32px;
+    }
+
+}
