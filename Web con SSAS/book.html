@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".hide_menu").click(function(){
+            $('#menu_div').css("visibility","hidden");
+            $('#hide_menu').css("visibility","hidden");
+            $('#show_menu').css("visibility","visible");
+            $('#logo2').css("visibility","visible")
+        });
+        
+        $(".show_menu").click(function(){
+            $('#menu_div').css("visibility","visible");
+            $('#hide_menu').css("visibility","visible");
+            $('#show_menu').css("visibility","hidden");
+            $('#logo2').css("visibility","hidden");
+            
+            
+        });
+
+        $(".show_cita").click(function(){
+            $('#citado').css("visibility","visible");
+        });
+
+        });
+        </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>Pide Cita</title>
+</head>
+<body>
+    <nav class="men_ex" >
+
+        
+        <div id="logillos">
+            <img src="img/logo.png" alt="" id="logo">
+            <h1 id="h1-logo">XHRIS THE BARBER</h1>
+            <h1 id="h1-logo2">HAIR STUDIO</h1>
+        </div>
+        <div id="menu_div">
+        <ul id="button">
+            <li><a href=index.html>INICIO</a></li>
+            <li><a href=galeria.html>GALERIA</a></li>
+            <li><a href=book.html>BOOK ONLINE</a></li>
+            <li><a href=contacto.html>CONTACTO</a></li>
+        </ul>
+        <div id="iconillos">
+            <a href="https://www.instagram.com/xhristhebarber/"><img src="img/insta-icon.svg" id="icons" alt="" srcset=""></a>
+            <a href=""><img src="img/tuita-icon.svg" id="icons" alt="" srcset=""></a>
+            <a href="https://www.facebook.com/Xhris-the-barber-103333081337603"><img src="img/faisbuk-icon.svg" id="icons" alt="" srcset=""></a>
+        </div>
+    </div>
+        
+    </nav>
+    
+    <div id="mostrar">
+        <a href="#" class="hide_menu" id="hide_menu"><img src="img/bars.png" class="img_show"></a>
+        <a href="#" class="show_menu" id="show_menu"><img src="img/bars.png" class="img_show"></a>
+    </div>
+
+    <h2 id="servicios"> <span> NUESTROS</span> SERVICIOS </h2>
+
+    <div id="citas">
+        <div>
+            <img src="img/calendario.webp" id="calendario">
+        </div>
+        <div id="encabezado">
+            <p>XhrisTheBarber</p>
+            <p>Solicitar Cita</p>
+        </div>
+        <hr class="hr-1">
+        <div id="precios">
+            <p>1 hr.</p>
+            <p>8 €</p>
+        </div>
+
+        <div class="container2">
+              <a href="#" class="btn"><span>Reservar Ahora</span></a>
+        </div>
+
+        <div id="cortes">
+            <div>
+                <h4>Corte de Caballero</h4>
+                <p>Corte, asesoramiento,lavado y peinado última Tendencia.</p>
+            </div>
+            <div>
+                <h4>Corte de Niño</h4>
+                <p>Corte, asesoramiento,lavado y peinado última Tendencia.</p>
+            </div>
+            <div>
+                <h4>Arreglo de Barba</h4>
+                <p>Definición de la barba con navaja y corte de barba con maquina y/o tijeras.</p>
+            </div>
+            <div>
+                <h4>Decoloración/Color</h4>
+                <p>Expertos tanto en Decoloraciones como Tintes a color.</p>
+            </div>
+            <div>
+                <h4>Limpieza Facial</h4>
+                <p>Asesoramientos faciales</p>
+            </div>
+
+        </div>
+
+        <div id="show_cita" class="show_cita" style="visibility: hidden;">
+            <p>En Desarrollo</p>
+        </div>
+
+    </div>
+
+
+    <img src="img/logo2.png" id="logo2">
+    <footer>
+        
+      <img src="img/logo2.png" alt="">
+      <h1>SEVILLA</h1>
+      <h3> <span style="color: yellow;">CUÉNTANOS:</span> INFO@THEBARBERSHOP.ES</h3>
+
+      <a href=""><div class="tuita-icon"></div></a>
+      <a href="https://www.facebook.com/Xhris-the-barber-103333081337603"><div class="faisbuk-icon"></div></a>
+      <a href="https://www.instagram.com/xhristhebarber/"><div class="insta-icon"></div></a>
+      <h3><a href="">POLITICA DE COOKIES</a></h3>
+      <h3><a href="">AVISO LEGAL & POLÍTICA DE PRIVACIDAD</a></h3>
+
+  </footer>
+
+</body>
+</html>

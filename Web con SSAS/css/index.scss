@@ -1,0 +1,2790 @@
+
+// Declaracion de variables
+$color_negro: black;
+$color_blanco: #fff;
+$color_gris: #F2F2F2;
+$background: #fefefe;
+$text: #4b507a;
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+$rel: relative;
+$width: 100%;
+$redes: tuita-icon faisbuk-icon insta-icon;
+
+// Bucle each para los iconos de Redes Sociales del Footer
+@each $red in $redes {
+  .#{$red} {
+    background-image: url(/img/#{$red}.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: $rel;
+    left: 620px;
+    top: 160px;
+  }
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+
+
+
+// Margen 0 para todo
+* {
+    margin: 0px;
+
+}
+
+html {
+  height: 100%;
+  width: $width;
+}
+
+// Quitamos la barra horizontal y ponemos de altura 100%
+body {
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+  width: $width;
+}
+
+// Damos altura y color al NAV
+nav {
+  background-color: $color_negro;
+  height: 79px;
+}
+
+// Damos estilo a los botones del Nav
+#button {
+  padding: 0;
+  position: absolute;
+  right: 223px;
+  top: 7px;
+  li{
+    display: inline;
+    a {
+      font-family: Arial;
+      font-size: 19px;
+      text-decoration: none;
+      float: left;
+      padding: 30px;
+      color: $color_blanco;
+      }
+    }
+}
+
+
+// Ponemos el Logo en el Nav y el nombre 
+#logo {
+  position: $rel;
+  left: 119px;
+  top: 7px;
+}
+
+#h1-logo {
+  color: $color_blanco;
+  position: $rel;
+  left: 199px;
+  top: -53px;
+}
+#h1-logo2 {
+    color: $color_blanco;
+    position: $rel;
+    left: 233px;
+    top: -53px;
+}
+
+// Estilo a los iconos redes sociales del Nav
+#icons {
+  padding: 11px;
+  float: right;
+  position: $rel;
+  right: 59px;
+  top: -101px;
+}
+
+// Foto Header -- Primera Foto
+#img-header {
+  position: $rel;
+  top: -89px;
+  width: 100%;
+  height: 639px;
+}
+
+// Foto Header -- Pagina Contactos
+#img-header2 {
+  position: $rel;
+  top: -89px;
+  width: 100%;
+  height: 639px;
+}
+
+// Foto Header -- Foto Pagina Galeria
+#img-header3 {
+  height: 350px;
+  width: fit-content;
+  position: $rel;
+  top: -90px;
+}
+
+// Texto Header --- Pagina Galeria
+#header3 {
+  h2 {
+  position: absolute;
+  top: 210px;
+  left: 590px;
+  font-size: 79px;
+  font-family: Lusitana, serif;
+  color: $color_blanco;
+  }
+}
+
+// Div intermedio 
+#inter {
+  text-align: center;
+  height: 100px;
+  position: $rel;
+  top: -45px;
+}
+
+
+ 
+#post-inter {
+  background-color: $color_gris;
+  height: 263px;
+  img {
+    width: 50px;
+    position: $rel;
+    left: 283px;
+    padding: 100px;
+    right: 283px;
+    top: -100px;
+  }
+}
+
+// DIV Sponsors
+#sponsors {
+  display: inline;
+  float: right;
+  position: $rel;
+  bottom: 0px;
+  right: 230px;
+}
+
+#imgspon {
+  margin: 50px 65px 50px 65px;
+
+}
+
+// Sobre Nosotros --- Primera Pagina
+#aboutus {
+  height: 750px;
+  #aboutus2 {
+    font-family: Arial;
+    font-size: 21px;
+    width: 460px;
+    position: relative;
+    left: 255px;
+    top: 60px;
+  }
+  #fotoabout {
+    position: relative;
+    left: 771px;
+    top: -370px;
+  }
+}
+
+
+// Iconos del Footer
+#footer-icons {
+  position: $rel;
+  width: 60px;
+  margin: 30px;
+  top: 100px;
+  left: 550px;
+}
+
+footer {
+  background-color: black;
+  height: 655px;
+  position: relative;
+  top: 0px;
+  img {
+    position: relative;
+    left: 660px;
+    top: 50px;
+  }
+  h1 {
+    color: white;
+    position: relative;
+    left: 670px;
+    top: 50px;
+  }
+  h3 {
+    color: white;
+    position: relative; 
+    left: 550px; 
+    top: 80px;
+    a {
+      position: $rel;
+      top: 120px;
+      left: -150px;
+      font-family: Arial;
+      font-size: 19px;
+      text-decoration: none;
+      float: left;
+      padding: 30px;
+      color: $color_blanco;
+    }
+  }
+}
+
+
+
+/* ^_^ CONTACTO ^_^ */
+
+@mixin intercont($color, $width) {
+    color: $color;
+    width: $width;
+}
+
+
+#inter-cont {
+  text-align: center;
+  height: 350px;
+  position: $rel;
+  background-color: #F2F2F2;
+  top: -90px;
+  img, #h1-cont {
+    position: $rel;
+    top: 70px;
+  }
+  p {@include intercont(gold, 200px);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: $rel;
+    top: 105px;
+    left: 650px;
+  }
+}
+
+#direccion {
+  background-color: $color_blanco;
+  text-align: center;
+  height: 1000px;
+}
+
+#map {
+  position: $rel;
+  top: 90px;
+  right: 283px;
+  #prueba {
+    width: 950px;
+  }
+}
+
+#cita {
+  position: $rel;
+  left: 270px;
+  bottom: 520px;
+  img {
+    width: 100px;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+} 
+
+#direccion2 {
+  position: $rel;
+  left: 270px;
+  bottom: 520px;
+  img {
+    width: 100px;
+  }
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    position: $rel;
+    left: 270px;
+    bottom: 75px;
+  }
+}
+
+#horario {
+  position: $rel;
+  left: 270px;
+  bottom: 520px;
+  #img-hor {
+    width: 100px;
+  }
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+  #img-horario {
+    position: $rel;
+    width: 350px;
+    height: 200px;
+    bottom: 60px;
+    left: 300px;
+  }
+}
+
+
+
+#help {
+  position: $rel;
+  left: 70px;
+  width: 440px;
+  img {
+    width: 440px;
+    height: 495px;
+  }
+} 
+
+// Importamos algunas fuentes para usar
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+
+// Metodo para quitar floats
+@mixin clearfix {
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+.align-center {
+   text-align: center;
+}
+
+
+// Formulario Contacto
+
+
+.row {
+   @include clearfix;
+   margin: -20px 0;
+   .col {
+      padding: 0 20px;
+      float: left;
+      box-sizing: border-box;
+      &.x-50 {
+         width: 50%;
+      }
+      &.x-100 {
+         width: 100%;
+      }
+   }
+}
+
+#form {
+  width: 900px;
+  position: $rel;
+  left: 550px;
+  bottom: 500px;
+
+  p{
+    position: $rel;
+    left: 100px;
+    top: -103px;
+    width: 783px;
+  }
+
+}
+
+// Texto leido 
+#leido {
+  position: $rel;
+  top: -137px;
+  left: 330px;
+  height: 20px;
+}
+.squaredThree {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 317px;
+    left: -150px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px $color_negro, 0px 1px 0px $color_gris;
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid $color_blanco;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+}
+
+.content-wrapper {
+   min-height: 100%;
+   position: relative;
+}
+
+.get-in-touch {
+   max-width: 650px;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+  
+  .title {
+     text-align: center;
+     font-family: Raleway, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font-size: 36px;
+     line-height: 48px;
+     padding-bottom: 48px;
+  }
+}
+
+.contact-form {
+   .form-field {
+      position: relative;
+      margin: 32px 0;
+   }
+   .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 2px 0;
+      border-color: $color_negro;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      
+      &:focus {
+         outline: none;
+      }
+      
+      &:focus,
+      &.not-empty {
+         + .label {
+            transform: translateY(-24px);
+         }
+      }
+   }
+   .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #888;
+      cursor: text;
+      transition: transform .2s ease-in-out;
+   }
+   
+   .submit-btn {
+      display: inline-block;
+      background-color: $color_negro;
+      color: $color_blanco;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 16px;
+      border: none;
+      position: $rel;
+      left: -300px;
+      top: -40px;
+      &:hover {
+        border: 2px solid black;
+        color: $color_negro;
+        background-color: invert($color: #000000);
+      }
+      cursor: pointer;
+
+      &:hover {
+        background-color: lightness($color: #000000);
+      }
+   }
+}
+
+.note {
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   font-family: Lusitana, serif;
+   font-size: 16px;
+   line-height: 21px;
+   
+   .link {
+      color: #888;
+      text-decoration: none;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+// Fin Formulario
+
+// Pagina Galeria
+
+// Ponemos en bloque de linea las filas de fotos
+#filas {
+  display: inline-block;
+  width: max-content;
+  
+  padding-left: 80px;
+  padding-bottom: 100px;
+  img {
+    width: 450px;
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+// Pagina Book/Citas
+#servicios {  // Div Principal
+  font-family: Lusitana, serif;
+  font-size: 40px;
+  position: $rel;
+  top: 50px;
+  left: 550px;
+}
+
+// Div para solicitar cita
+#citas {
+  border: 1px solid #aaabac;
+  width: 300px;
+  height: 550px;
+  position: $rel;
+  left: 200px;
+  top: 100px;
+  img {
+    width: 300px;
+    height: 250px;
+  }
+  #encabezado {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    p {
+      text-align: center;
+      font-size: 27px;
+      font-weight: 15px;
+    }
+  }
+  #precios {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 17px;
+  }
+}
+
+hr {
+  background-color: #fff;
+  padding: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  &.hr-1 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, $color_negro, $color_negro, $color_negro);
+  }
+}
+
+#show_cita {
+  position: $rel;
+  top: -450px;
+  left: 300px;
+  border: #000000 1px solid;
+  text-align: center;
+  background-color: white;
+  height: 100px;
+  p {
+    text-align: center;
+    position: $rel;
+    top: 40px
+  }
+}
+
+// Importamos unos iconos
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// Boton  Reservar Cita --- Pagina Book
+.container2 { // Div que contiene el boton
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  
+}
+
+.btn {    // Boton 
+  position: $rel;
+  top: 490px;
+  left: 57px;
+  border-radius: 50px;
+  color: $color_blanco;
+  background-color: #F8C69B;
+  padding: 12px 42px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #fdecdd;
+  text-decoration: none;
+  transition: 0.2s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+// Corte de Precios -- Pagina Citas
+#cortes {
+  position: relative;
+  left: 500px;
+  top: -380px;
+  width: 700px;
+  h4 {
+    font-size: 27px;
+  }
+  p {
+    font-family: Lusitana, serif;;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+// Boton Ver Más -- Pagina Galeria
+.button{
+  
+  button {
+    position: $rel;
+    left: 680px;
+    top: -50px;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    // Usamos un box-shadow en vez del borde para hacer mas sencillo el tamaño
+    box-shadow: inset 0 0 0 2px $red;
+    color: $red;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.draw {
+  transition: color 0.25s;
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // Esto cubre los bordes superiores y de la derecha, se espande por la derecha y luego para abajo
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // Y este bordes de abajo e izquierda, expande izquierda y luego arriba
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  // Damos estilo color cuando el cursor esta encima
+  &:hover {
+    color: $cyan;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: $cyan; // Este hace el borde invisible
+    border-right-color: $cyan;
+    transition:
+      width 0.25s ease-out, // Expande el ancho
+      height 0.25s ease-out 0.25s; // Y luego el alto
+  }
+
+  &:hover::after {
+    border-bottom-color: $cyan; // Este hace el borde visible de nuevo
+    border-left-color: $cyan;
+    transition:
+      border-color 0s ease-out 0.5s, 
+      width 0.25s ease-out 0.5s, // Expande el ancho
+      height 0.25s ease-out 0.75s; // Y por ultimo expande la altura  
+  }
+}
+
+
+// Boton Ver Mas --- Pagina Galeria
+.meet {
+  
+  &:hover { // Cuando dejamos el cursor por encima se cambia al amarillo
+    color: $yellow;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  // Cambia de color amarillo
+  &:hover::before {
+    border-top-color: $yellow;
+    border-right-color: $yellow;
+  }
+
+  &:hover::after {
+    border-bottom-color: $yellow;
+    border-left-color: $yellow;
+    transition: // Animamos la altura primero y luego la anchura
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+  }
+
+}
+
+
+
+
+// Slider/Carrusel Opiniones ---- Pagina Inicio
+
+.container{
+  position: $rel;
+  top: 0px;
+  margin: auto;
+  background-color: white;
+  width: 800px;
+  padding: 30px;
+
+}
+
+ul {
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+}
+
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+  li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+    p {
+      font-style: italic;
+      font-size: 30px;
+    }
+    #nombre {
+      font-weight: bold;
+    }
+    &:first-child {
+      opacity: 1; //Mostramos el primer <li>
+    }
+    &:target {
+      opacity: 1; //Mostramos el <li> del enlace que pulsemos
+    }
+  }
+  
+}
+
+
+
+.menu{
+  text-align: center;
+  margin: 20px;
+  position: $rel;
+  top: -100px;
+  li{
+    display: inline-block;
+    text-align: center;
+    width: 2em;
+    width: 2em;
+    margin: 10px;
+    a{
+      display: inline-block;
+      text-decoration: none;
+      background-color: grey;
+      padding: 10px;
+      border-radius: 100%;
+    }
+  }
+  
+}
+
+.control-menu {
+  height: 0;
+  overflow: hidden;
+}
+
+.img_show {
+  height: 0;
+  overflow: hidden;
+}
+
+#logo2{
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 579px) {
+  
+// Declaracion de variables
+$anchura: 575px;
+$color_negro: black;
+$color_blanco: #fff;
+$color_gris: #F2F2F2;
+$background: #fefefe;
+$text: #4b507a;
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+$rel: relative;
+$redes: tuita-icon faisbuk-icon insta-icon;
+
+// Bucle each para los iconos de Redes Sociales del Footer
+@each $red in $redes {
+  .#{$red} {
+    background-image: url(/img/#{$red}.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: $rel;
+    left: 620px;
+    top: 160px;
+  }
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+
+
+
+// Margen 0 para todo
+* {
+    margin: 0px;
+}
+
+html {
+  width: $anchura;
+  height: 100%;
+}
+
+// Quitamos la barra horizontal y ponemos de altura 100%
+body {
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+  height: $anchura;
+  
+}
+
+.menu_ex {
+  border-radius: 5px;
+}
+.men_ex ul {
+  margin: 0; 
+  padding: 0;
+  width:185px;
+  list-style-type: none;
+  
+}
+.men_ex ul li a {
+  text-decoration: none;
+  color: #fff; 
+  padding: 10.5px 11px;
+  display:block;
+}
+.show_hide{
+  position:fixed;
+  margin: 30px 30px;
+}
+
+.img_show {
+  height: 100px;
+  background-color: invert($color: #000000);
+  position: relative;
+  top: -100px;
+}
+
+
+#menu_div {
+  visibility: hidden;
+}
+.hide_menu {
+  visibility: hidden;
+}
+
+#logillos {
+  visibility: hidden;
+}
+
+#mostrar {
+  position: relative;
+  top: -50px;
+}
+
+#logo2 {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  visibility: visible;
+}
+
+
+
+// Damos altura y color al NAV
+nav {
+  background-color: $color_negro;
+  height: 179px;
+  width: $anchura;
+}
+
+// Damos estilo a los botones del Nav
+#button {
+  padding: 0;
+  position: absolute;
+  left: 100px;
+  top: 7px;
+  width: 100%;
+  li{
+    display: inline-block;
+    a {
+      font-family: Arial;
+      font-size: 19px;
+      text-decoration: none;
+      float: left;
+      padding: 30px;
+      color: $color_blanco;
+      }
+    }
+}
+
+
+// Ponemos el Logo en el Nav y el nombre 
+#logo {
+  position: $rel;
+  left: 119px;
+  top: 7px;
+}
+
+#h1-logo {
+  color: $color_blanco;
+  position: $rel;
+  left: 199px;
+  top: -53px;
+}
+#h1-logo2 {
+    color: $color_blanco;
+    position: $rel;
+    left: 233px;
+    top: -53px;
+}
+
+// Estilo a los iconos redes sociales del Nav
+#icons {
+  padding: 11px;
+  float: right;
+  position: $rel;
+  right: 159px;
+  top: -15px;
+}
+
+// Foto Header -- Primera Foto
+#img-header {
+  position: $rel;
+  top: -89px;
+  width: $anchura;
+  height: 639px;
+}
+#img-header2 {
+  position: $rel;
+  top: -109px;
+  width: $anchura;
+  height: 339px;
+}
+
+// Foto Header -- Foto Pagina Galeria
+#img-header3 {
+  height: 350px;
+  width: $anchura;
+  position: $rel;
+  top: -90px;
+}
+
+// Texto Header --- Pagina Galeria
+#header3 {
+  h2 {
+  position: absolute;
+  top: 310px;
+  left: 90px;
+  font-size: 79px;
+  font-family: Lusitana, serif;
+  color: $color_blanco;
+  }
+}
+
+// Div intermedio 
+#inter {
+  text-align: center;
+  height: 100px;
+  position: $rel;
+  top: -245px;
+}
+
+
+ 
+#post-inter {
+  background-color: $color_gris;
+  height: 263px;
+  visibility: hidden;
+  img {
+    width: 50px;
+    position: $rel;
+    left: 283px;
+    padding: 100px;
+    right: 283px;
+    top: -100px;
+  }
+}
+ 
+// DIV Sponsors
+#sponsors {
+  display: inline;
+  width: $anchura;
+  height: 100px;
+  float: right;
+  position: $rel;
+  bottom: 150px;
+  right: 20px;
+}
+
+#imgspon {
+  height: 50px;
+  width: 50px;
+
+}
+
+
+#aboutus {
+  position: $rel;
+  left: -200px;
+  width: $anchura;
+  height: 1050px;
+  #fotoabout {
+    position: $rel;
+    top: 100px;
+    left: 250px;
+  }
+}
+
+// Iconos del Footer
+#footer-icons {
+  position: $rel;
+  width: 60px;
+  margin: 30px;
+  top: 100px;
+  left: 550px;
+}
+
+
+footer {
+  background-color: black;
+  height: 655px;
+  width: $anchura;
+  position: relative;
+  top: 0px;
+  img {
+    position: $rel;
+    left: 230px;
+    top: 50px;
+  }
+  h1 {
+    color: white;
+    position: relative;
+    left: 237px;
+    top: 50px;
+  }
+  h3 {
+    color: white;
+    position: relative; 
+    left: 110px; 
+    top: 80px;
+    a {
+      position: $rel;
+      top: -20px;
+      left: -100px;
+      display: inline-block;
+      font-family: Arial;
+      font-size: 14px;
+      text-decoration: none;
+      
+      padding: 30px;
+      color: $color_blanco;
+    }
+  }
+}
+
+
+
+/* ^_^ CONTACTO ^_^ */
+
+#inter-cont {
+  text-align: center;
+  height: 350px;
+  position: $rel;
+  background-color: #F2F2F2;
+  top: -90px;
+  img, #h1-cont {
+    position: $rel;
+    top: 70px;
+  }
+  p {
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: $rel;
+    top: 105px;
+    left: 290px;
+  }
+}
+
+
+#direccion {
+  background-color: $color_blanco;
+  text-align: center;
+  height: 1000px;
+}
+
+#map {
+  position: $rel;
+  top: 90px;
+  right: 283px;
+  visibility: hidden;
+  #prueba {
+    width: 950px;
+  }
+}
+
+
+#cita {
+  position: $rel;
+  left: -190px;
+  bottom: 520px;
+  img {
+    width: 100px;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+}
+
+#direccion2 {
+  position: $rel;
+  left: -190px;
+  width: $anchura;
+  bottom: 520px;
+  img {
+    width: 100px;
+  }
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    position: $rel;
+    left: 270px;
+    bottom: 75px;
+  }
+  
+}
+
+#horario {
+  position: $rel;
+  left: -190px;
+  bottom: 520px;
+  #img-hor {
+    width: 100px;
+  }
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    position: $rel;
+    left: 200px;
+    bottom: 85px;
+  }
+  #img-horario {
+    position: $rel;
+    width: 350px;
+    height: 200px;
+    bottom: 60px;
+    left: 300px;
+  }
+}
+
+
+
+#help {
+  position: $rel;
+  left: 70px;
+  width: 440px;
+  img {
+    width: 440px;
+    height: 495px;
+  }
+}
+
+// Importamos algunas fuentes para usar
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+
+// Metodo para quitar floats
+@mixin clearfix {
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+.align-center {
+   text-align: center;
+}
+
+
+// Formulario Contacto
+
+
+.row {
+   @include clearfix;
+   margin: -20px 0;
+   .col {
+      padding: 0 20px;
+      float: left;
+      box-sizing: border-box;
+      &.x-50 {
+         width: 50%;
+      }
+      &.x-100 {
+         width: 100%;
+      }
+   }
+}
+
+#form {
+  width: $anchura - 50px;
+  position: $rel;
+  left: 50px;
+  bottom: 0;
+
+  p{
+    visibility: hidden;
+  }
+  
+}
+
+// Texto leido 
+#leido {
+  position: $rel;
+  top: -137px;
+  left: 130px;
+  height: 20px;
+}
+.squaredThree {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 317px;
+    left: -150px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px $color_negro, 0px 1px 0px $color_gris;
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid $color_blanco;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+}
+
+.content-wrapper {
+   min-height: 100%;
+   position: relative;
+}
+
+.get-in-touch {
+   max-width: 650px;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+  
+  .title {
+     text-align: center;
+     font-family: Raleway, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font-size: 36px;
+     line-height: 48px;
+     padding-bottom: 48px;
+  }
+}
+
+.contact-form {
+   .form-field {
+      position: relative;
+      margin: 32px 0;
+   }
+   .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 2px 0;
+      border-color: $color_negro;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      
+      &:focus {
+         outline: none;
+      }
+      
+      &:focus,
+      &.not-empty {
+         + .label {
+            transform: translateY(-24px);
+         }
+      }
+   }
+   .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #888;
+      cursor: text;
+      transition: transform .2s ease-in-out;
+   }
+   
+   .submit-btn {
+      display: inline-block;
+      background-color: $color_negro;
+      color: $color_blanco;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 16px;
+      border: none;
+      position: $rel;
+      left: -10px;
+      top: 50px;
+      &:hover {
+        border: 2px solid black;
+        color: $color_negro;
+        background-color: invert($color: #000000);
+      }
+      cursor: pointer;
+
+      &:hover {
+        background-color: lightness($color: #000000);
+      }
+   }
+}
+
+.note {
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   font-family: Lusitana, serif;
+   font-size: 16px;
+   line-height: 21px;
+   
+   .link {
+      color: #888;
+      text-decoration: none;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+// Fin Formulario
+
+// Pagina Galeria
+
+// Ponemos en bloque de linea las filas de fotos
+#filas {
+  display: inline-block;
+  width: $anchura;
+  
+  padding-left: 80px;
+  padding-bottom: 100px;
+  img {
+    width: 450px;
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+// Pagina Book/Citas
+#servicios {  // Div Principal
+  span {
+    visibility: hidden;
+  }
+  font-family: Lusitana, serif;
+  font-size: 40px;
+  position: $rel;
+  top: -30px;
+  left: -50px;
+}
+
+// Div para solicitar cita
+#citas {
+  border: 0px solid #aaabac;;
+  hr {
+    visibility: hidden;
+  }
+  width: 300px;
+  height: 550px;
+  position: $rel;
+  
+  img {
+    visibility: hidden;
+    
+  }
+  #encabezado {
+    visibility: hidden;
+    
+    p {
+      visibility: hidden;
+      
+    }
+  }
+  #precios {
+    visibility: hidden;
+    
+  }
+}
+
+
+// Importamos unos iconos
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// Boton  Reservar Cita --- Pagina Book
+.container2 { // Div que contiene el boton
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  
+}
+
+.btn {    // Boton 
+  position: $rel;
+  top: 390px;
+  left: 130px;
+  border-radius: 50px;
+  color: $color_blanco;
+  background-color: #F8C69B;
+  padding: 12px 42px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #fdecdd;
+  text-decoration: none;
+  transition: 0.2s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+// Corte de Precios -- Pagina Citas
+#cortes {
+  position: relative;
+  left: -150px;
+  top: -540px;
+  width: $anchura - 40px;
+  h4 {
+    font-size: 27px;
+  }
+  p {
+    font-family: Lusitana, serif;;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+// Boton Ver Más -- Pagina Galeria
+
+.button {
+  position: $rel;
+  left: -450px;
+  button {
+    position: $rel;
+    left: 680px;
+    top: -50px;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    // Usamos un box-shadow en vez del borde para hacer mas sencillo el tamaño
+    box-shadow: inset 0 0 0 2px $red;
+    color: $red;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .draw {
+    transition: color 0.25s;
+    &::before,
+    &::after {
+      border: 2px solid transparent;
+      width: 0;
+      height: 0;
+    }
+
+    // Esto cubre los bordes superiores y de la derecha, se espande por la derecha y luego para abajo
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    // Y este bordes de abajo e izquierda, expande izquierda y luego arriba
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+
+    // Damos estilo color cuando el cursor esta encima
+    &:hover {
+      color: $cyan;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover::before {
+      border-top-color: $cyan; // Este hace el borde invisible
+      border-right-color: $cyan;
+      transition:
+        width 0.25s ease-out, // Expande el ancho
+        height 0.25s ease-out 0.25s; // Y luego el alto
+    }
+
+    &:hover::after {
+      border-bottom-color: $cyan; // Este hace el borde visible de nuevo
+      border-left-color: $cyan;
+      transition:
+        border-color 0s ease-out 0.5s, 
+        width 0.25s ease-out 0.5s, // Expande el ancho
+        height 0.25s ease-out 0.75s; // Y por ultimo expande la altura  
+    }
+  }
+}
+
+// Boton Ver Mas --- Pagina Galeria
+.meet {
+  
+  &:hover { // Cuando dejamos el cursor por encima se cambia al amarillo
+    color: $yellow;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  // Cambia de color amarillo
+  &:hover::before {
+    border-top-color: $yellow;
+    border-right-color: $yellow;
+  }
+
+  &:hover::after {
+    border-bottom-color: $yellow;
+    border-left-color: $yellow;
+    transition: // Animamos la altura primero y luego la anchura
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+  }
+
+}
+
+
+
+
+// Slider/Carrusel Opiniones ---- Pagina Inicio
+
+.container{
+  height: 500px;
+  position: $rel;
+  top: 100px;
+  margin: auto;
+  background-color: white;
+  width: $anchura;
+  padding: 30px;
+
+}
+
+ul {
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+}
+
+
+ul.slider{
+  position: relative;
+  width: $anchura - 50px;
+  height: 300px;
+  li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+    p {
+      font-style: italic;
+      font-size: 30px;
+    }
+    #nombre {
+      font-weight: bold;
+    }
+    &:first-child {
+      opacity: 1; //Mostramos el primer <li>
+    }
+    &:target {
+      opacity: 1; //Mostramos el <li> del enlace que pulsemos
+    }
+  }
+  
+}
+
+
+
+.menu{
+  text-align: center;
+  margin: 20px;
+  position: $rel;
+  top: -77px;
+  li{
+    display: inline-block;
+    text-align: center;
+    width: 2em;
+    width: 2em;
+    margin: 10px;
+    a{
+      display: inline-block;
+      text-decoration: none;
+      background-color: grey;
+      padding: 10px;
+      border-radius: 100%;
+    }
+  }
+  
+}
+
+
+}
+
+@media screen and (min-width: 579px) and (max-width: 769px) {
+  
+  // Declaracion de variables
+  $anchura: 765px;
+  $color_negro: black;
+  $color_blanco: #fff;
+  $color_gris: #F2F2F2;
+  $background: #fefefe;
+  $text: #4b507a;
+  $cyan: #60daaa;
+  $yellow: #fbca67;
+  $orange: #ff8a30;
+  $red: #f45e61;
+  $purple: #6477b9;
+  $blue: #0eb7da;
+  $rel: relative;
+  $redes: tuita-icon faisbuk-icon insta-icon;
+  
+  // Bucle each para los iconos de Redes Sociales del Footer
+  @each $red in $redes {
+    .#{$red} {
+      background-image: url(/img/#{$red}.svg);
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      position: $rel;
+      left: 250px;
+      top: 120px;
+    }
+  }
+  
+  
+  
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+  
+  
+  
+  
+  
+  // Margen 0 para todo
+  * {
+      margin: 0px;
+  }
+  
+  html {
+    width: $anchura;
+    height: 100%;
+  }
+  
+  // Quitamos la barra horizontal y ponemos de altura 100%
+  body {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    height: $anchura;
+    
+  }
+  
+  .menu_ex {
+    border-radius: 5px;
+  }
+  .men_ex ul {
+    margin: 0; 
+    padding: 0;
+    width:185px;
+    list-style-type: none;
+    
+  }
+  .men_ex ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10.5px 11px;
+    display:block;
+  }
+  .show_hide{
+    position:fixed;
+    margin: 30px 30px;
+  }
+  
+  .img_show {
+    height: 100px;
+    background-color: invert($color: #000000);
+    position: relative;
+    top: -100px;
+  }
+  
+  
+  #menu_div {
+    visibility: hidden;
+  }
+  .hide_menu {
+    visibility: hidden;
+  }
+  
+  #logillos {
+    visibility: hidden;
+  }
+  
+  #mostrar {
+    position: relative;
+    top: -50px;
+  }
+  
+  #logo2 {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    visibility: visible;
+  }
+  
+  
+  
+  // Damos altura y color al NAV
+  nav {
+    background-color: $color_negro;
+    height: 179px;
+    width: $anchura;
+  }
+  
+  // Damos estilo a los botones del Nav
+  #button {
+    padding: 0;
+    position: absolute;
+    left: 100px;
+    top: 7px;
+    width: 100%;
+    li{
+      display: inline-block;
+      a {
+        font-family: Arial;
+        font-size: 19px;
+        text-decoration: none;
+        float: left;
+        padding: 30px;
+        color: $color_blanco;
+        }
+      }
+  }
+  
+  
+  // Ponemos el Logo en el Nav y el nombre 
+  #logo {
+    position: $rel;
+    left: 119px;
+    top: 7px;
+  }
+  
+  #h1-logo {
+    color: $color_blanco;
+    position: $rel;
+    left: 199px;
+    top: -53px;
+  }
+  #h1-logo2 {
+      color: $color_blanco;
+      position: $rel;
+      left: 233px;
+      top: -53px;
+  }
+  
+  // Estilo a los iconos redes sociales del Nav
+  #icons {
+    padding: 11px;
+    float: right;
+    position: $rel;
+    right: 159px;
+    top: -15px;
+  }
+  
+  /* Foto Header -- Primera Foto */
+  #img-header {
+    position: $rel;
+    top: -89px;
+    width: $anchura;
+    height: 639px;
+  }
+  #img-header2 {
+    position: $rel;
+    top: -109px;
+    width: $anchura;
+    height: 339px;
+  }
+  
+  /* Foto Header -- Foto Pagina Galeria */
+  #img-header3 {
+    height: 350px;
+    width: $anchura;
+    position: $rel;
+    top: -90px;
+  }
+  
+  /* Texto Header --- Pagina Galeria */
+  #header3 {
+    h2 {
+    position: absolute;
+    top: 310px;
+    left: 90px;
+    font-size: 79px;
+    font-family: Lusitana, serif;
+    color: $color_blanco;
+    }
+  }
+  
+  // Div intermedio 
+  #inter {
+    text-align: center;
+    height: 100px;
+    position: $rel;
+    top: 105px;
+  }
+  
+  
+   
+  #post-inter {
+    background-color: $color_gris;
+    height: 263px;
+    visibility: hidden;
+    img {
+      width: 50px;
+      position: $rel;
+      left: 283px;
+      padding: 100px;
+      right: 283px;
+      top: -100px;
+    }
+  }
+  
+  // DIV Sponsors
+  #sponsors {
+    display: inline;
+    width: $anchura;
+    height: 100px;
+    float: right;
+    position: $rel;
+    bottom: 150px;
+    right: -10px;
+  }
+  
+  #imgspon {
+    height: 50px;
+    width: 50px;
+  
+  }
+  
+  
+  #aboutus {
+    position: $rel;
+    left: -110px;
+    width: $anchura;
+    height: 1050px;
+    #fotoabout {
+      position: $rel;
+      top: 100px;
+      left: 250px;
+    }
+  }
+  
+  // Iconos del Footer
+  #footer-icons {
+    position: $rel;
+    width: 60px;
+    margin: 30px;
+    top: 100px;
+    left: 550px;
+  }
+  
+  
+  footer {
+    background-color: black;
+    height: 655px;
+    width: $anchura;
+    position: relative;
+    top: 0px;
+    img {
+      position: $rel;
+      left: 290px;
+      top: 50px;
+    }
+    h1 {
+      color: white;
+      position: relative;
+      left: 297px;
+      top: 50px;
+    }
+    h3 {
+      color: white;
+      position: relative; 
+      left: 180px; 
+      top: 80px;
+      a {
+        position: $rel;
+        top: -20px;
+        left: -100px;
+        display: inline-block;
+        font-family: Arial;
+        font-size: 14px;
+        text-decoration: none;
+        
+        padding: 30px;
+        color: $color_blanco;
+      }
+    }
+  }
+  
+  
+  
+  /* ^_^ CONTACTO ^_^ */
+  
+  #inter-cont {
+    text-align: center;
+    height: 350px;
+    position: $rel;
+    background-color: #F2F2F2;
+    top: -90px;
+    img, #h1-cont {
+      position: $rel;
+      top: 70px;
+    }
+    p {
+      color: gold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      position: $rel;
+      top: 105px;
+      left: 290px;
+    }
+  }
+  
+  #direccion {
+    background-color: $color_blanco;
+    text-align: center;
+    height: 1000px;
+  }
+  
+  #map {
+    position: $rel;
+    top: 90px;
+    right: 283px;
+    visibility: hidden;
+    #prueba {
+      width: 950px;
+    }
+  }
+  
+  
+  #cita {
+    position: $rel;
+    left: -190px;
+    bottom: 520px;
+    img {
+      width: 100px;
+    }
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: xx-large;
+      position: $rel;
+      left: 200px;
+      bottom: 85px;
+    }
+  }
+  
+  #direccion2 {
+    position: $rel;
+    left: -190px;
+    width: $anchura;
+    bottom: 520px;
+    img {
+      width: 100px;
+    }
+    h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: xx-large;
+      position: $rel;
+      left: 200px;
+      bottom: 85px;
+    }
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: x-large;
+      position: $rel;
+      left: 270px;
+      bottom: 75px;
+    }
+  }
+  
+  #horario {
+    position: $rel;
+    left: -190px;
+    bottom: 520px;
+    #img-hor {
+      width: 100px;
+    }
+    #img-horario {
+      position: $rel;
+      width: 350px;
+      height: 200px;
+      bottom: 60px;
+      left: 300px;
+    }
+    h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: xx-large;
+      position: $rel;
+      left: 200px;
+      bottom: 85px;
+    }
+  }
+  
+  #help {
+    position: $rel;
+    left: 70px;
+    width: 440px;
+    img {
+      width: 440px;
+      height: 495px;
+    }
+  }
+  
+  
+  // Importamos algunas fuentes para usar
+  @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+  @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+  
+  
+  // Metodo para quitar floats
+  @mixin clearfix {
+     &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  }
+  
+  .align-center {
+     text-align: center;
+  }
+  
+  
+  // Formulario Contacto
+  
+  
+  .row {
+     @include clearfix;
+     margin: -20px 0;
+     .col {
+        padding: 0 20px;
+        float: left;
+        box-sizing: border-box;
+        &.x-50 {
+           width: 50%;
+        }
+        &.x-100 {
+           width: 100%;
+        }
+     }
+  }
+  
+  #form {
+    width: $anchura - 50px;
+    position: $rel;
+    left: 50px;
+    bottom: 0;
+  
+    p{
+      visibility: hidden;
+    }
+    
+  }
+  
+  // Texto leido 
+  #leido {
+    position: $rel;
+    top: -137px;
+    left: 130px;
+    height: 20px;
+  }
+  .squaredThree {
+    width: 20px;
+    position: relative;
+    margin: 20px auto;
+    label {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 317px;
+      left: -250px;
+      background: linear-gradient(top, #222 0%, #45484d 100%);
+      border-radius: 4px;
+      box-shadow: inset 0px 1px 1px $color_negro, 0px 1px 0px $color_gris;
+      &:after {
+        content: '';
+        width: 9px;
+        height: 5px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border: 3px solid $color_blanco;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        opacity: 0;
+        transform: rotate(-45deg);
+      }
+      &:hover::after {
+        opacity: 0.3;
+      }
+    }
+    input[type=checkbox] {
+      visibility: hidden;
+      &:checked + label:after {
+        opacity: 1;
+      }    
+    }
+  }
+  
+  .content-wrapper {
+     min-height: 100%;
+     position: relative;
+  }
+  
+  .get-in-touch {
+     max-width: 650px;
+     margin: 0 auto;
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+    
+    .title {
+       text-align: center;
+       font-family: Raleway, sans-serif;
+       text-transform: uppercase;
+       letter-spacing: 3px;
+       font-size: 36px;
+       line-height: 48px;
+       padding-bottom: 48px;
+    }
+  }
+  
+  .contact-form {
+     .form-field {
+        position: relative;
+        margin: 32px 0;
+     }
+     .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        border-color: $color_negro;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        
+        &:focus {
+           outline: none;
+        }
+        
+        &:focus,
+        &.not-empty {
+           + .label {
+              transform: translateY(-24px);
+           }
+        }
+     }
+     .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        transition: transform .2s ease-in-out;
+     }
+     
+     .submit-btn {
+        display: inline-block;
+        background-color: $color_negro;
+        color: $color_blanco;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 16px;
+        border: none;
+        position: $rel;
+        left: -10px;
+        top: 50px;
+        &:hover {
+          border: 2px solid black;
+          color: $color_negro;
+          background-color: invert($color: #000000);
+        }
+        cursor: pointer;
+  
+        &:hover {
+          background-color: lightness($color: #000000);
+        }
+     }
+  }
+  
+  .note {
+     position: absolute;
+     left: 0;
+     bottom: 10px;
+     width: 100%;
+     text-align: center;
+     font-family: Lusitana, serif;
+     font-size: 16px;
+     line-height: 21px;
+     
+     .link {
+        color: #888;
+        text-decoration: none;
+        &:hover {
+           text-decoration: underline;
+        }
+     }
+  }
+  
+  // Fin Formulario
+  
+  /* Pagina Galeria */
+  
+  // Ponemos en bloque de linea las filas de fotos
+  #filas {
+    display: inline-block;
+    width: $anchura;
+    position: $rel;
+    right: 30px;
+    
+    padding-left: 80px;
+    padding-bottom: 100px;
+    img {
+      width: 225px;
+      height: 250px;
+      margin-right: 30px;
+      padding-left: 00px;
+      padding-right: 0px;
+    }
+    #escondido {
+      visibility: hidden;
+    }
+  }
+  
+  /* Pagina Book/Citas */
+  #servicios {  // Div Principal
+    span {
+      visibility: hidden;
+    }
+    font-family: Lusitana, serif;
+    font-size: 40px;
+    position: $rel;
+    top: -30px;
+    left: -50px;
+  }
+  
+  // Div para solicitar cita
+  #citas {
+    border: 0px solid #aaabac;;
+    hr {
+      visibility: hidden;
+    }
+    width: 300px;
+    height: 550px;
+    position: $rel;
+    
+    img {
+      visibility: hidden;
+      
+    }
+    #encabezado {
+      visibility: hidden;
+      
+      p {
+        visibility: hidden;
+        
+      }
+    }
+    #precios {
+      visibility: hidden;
+      
+    }
+  }
+  
+  
+  // Importamos unos iconos
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+  
+  /* Boton  Reservar Cita --- Pagina Book */
+  .container2 { // Div que contiene el boton
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    
+  }
+  
+  .btn {    // Boton 
+    position: $rel;
+    top: 390px;
+    left: 130px;
+    border-radius: 50px;
+    color: $color_blanco;
+    background-color: #F8C69B;
+    padding: 12px 42px;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    border: 2px solid #fdecdd;
+    text-decoration: none;
+    transition: 0.2s;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  // Corte de Precios -- Pagina Citas
+  #cortes {
+    position: relative;
+    left: -150px;
+    top: -540px;
+    width: $anchura - 40px;
+    h4 {
+      font-size: 27px;
+    }
+    p {
+      font-family: Lusitana, serif;;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  // Boton Ver Más -- Pagina Galeria
+  
+  .button {
+    position: $rel;
+    left: -450px;
+    button {
+      position: $rel;
+      left: 660px;
+      top: -220px;
+      background: none;
+      border: 0;
+      box-sizing: border-box;
+      margin: 1em;
+      padding: 1em 2em;
+      cursor: pointer;
+      text-transform: uppercase;
+      // Usamos un box-shadow en vez del borde para hacer mas sencillo el tamaño
+      box-shadow: inset 0 0 0 2px $red;
+      color: $red;
+      font-size: inherit;
+      font-weight: 700;
+      position: relative;
+      vertical-align: middle;
+  
+      &::before,
+      &::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .draw {
+      transition: color 0.25s;
+      &::before,
+      &::after {
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+  
+      // Esto cubre los bordes superiores y de la derecha, se espande por la derecha y luego para abajo
+      &::before {
+        top: 0;
+        left: 0;
+      }
+  
+      // Y este bordes de abajo e izquierda, expande izquierda y luego arriba
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+  
+      // Damos estilo color cuando el cursor esta encima
+      &:hover {
+        color: $cyan;
+      }
+  
+      &:hover::before,
+      &:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+  
+      &:hover::before {
+        border-top-color: $cyan; // Este hace el borde invisible
+        border-right-color: $cyan;
+        transition:
+          width 0.25s ease-out, // Expande el ancho
+          height 0.25s ease-out 0.25s; // Y luego el alto
+      }
+  
+      &:hover::after {
+        border-bottom-color: $cyan; // Este hace el borde visible de nuevo
+        border-left-color: $cyan;
+        transition:
+          border-color 0s ease-out 0.5s, 
+          width 0.25s ease-out 0.5s, // Expande el ancho
+          height 0.25s ease-out 0.75s; // Y por ultimo expande la altura  
+      }
+    }
+  }
+  
+  // Boton Ver Mas --- Pagina Galeria
+  .meet {
+    
+    &:hover { // Cuando dejamos el cursor por encima se cambia al amarillo
+      color: $yellow;
+    }
+  
+    &::after {
+      top: 0;
+      left: 0;
+    }
+  
+    // Cambia de color amarillo
+    &:hover::before {
+      border-top-color: $yellow;
+      border-right-color: $yellow;
+    }
+  
+    &:hover::after {
+      border-bottom-color: $yellow;
+      border-left-color: $yellow;
+      transition: // Animamos la altura primero y luego la anchura
+        height 0.25s ease-out,
+        width 0.25s ease-out 0.25s;
+    }
+  
+  }
+  
+  
+  
+  
+  // Slider/Carrusel Opiniones ---- Pagina Inicio
+  
+  .container{
+    height: 500px;
+    position: $rel;
+    top: 100px;
+    margin: auto;
+    background-color: white;
+    width: $anchura;
+    padding: 30px;
+  
+  }
+  
+  ul {
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
+  }
+  
+  
+  ul.slider{
+    position: relative;
+    width: $anchura - 50px;
+    height: 300px;
+    li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+      p {
+        font-style: italic;
+        font-size: 30px;
+      }
+      #nombre {
+        font-weight: bold;
+      }
+      &:first-child {
+        opacity: 1; //Mostramos el primer <li>
+      }
+      &:target {
+        opacity: 1; //Mostramos el <li> del enlace que pulsemos
+      }
+    }
+    
+  }
+  
+  
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+    position: $rel;
+    top: -77px;
+    left: -50px;
+    li{
+      display: inline-block;
+      text-align: center;
+      width: 2em;
+      width: 2em;
+      margin: 10px;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 100%;
+      }
+    }
+    
+  }
+  
+  
+  }

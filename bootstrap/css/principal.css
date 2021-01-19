@@ -1,0 +1,13 @@
+.navegacion {
+    height: 60px;
+}
+
+nav>a {
+    position: relative;
+    left: 450px;
+}
+
+.iconos {
+    position: relative;
+    left: 30px;
+}

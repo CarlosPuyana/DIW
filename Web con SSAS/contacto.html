@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".hide_menu").click(function(){
+            $('#menu_div').css("visibility","hidden");
+            $('#hide_menu').css("visibility","hidden");
+            $('#show_menu').css("visibility","visible");
+            $('#logo2').css("visibility","visible")
+            $('#logo2').css("height","100px")
+        });
+        
+        $(".show_menu").click(function(){
+            $('#menu_div').css("visibility","visible");
+            $('#hide_menu').css("visibility","visible");
+            $('#show_menu').css("visibility","hidden");
+            $('#logo2').css("visibility","hidden")
+            
+            
+        });
+        });
+        </script>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>CONTACTO</title>
+</head>
+<body class="theme theme--dark">
+    <nav class="men_ex" >
+
+        
+        <div id="logillos">
+            <img src="img/logo.png" alt="" id="logo">
+            <h1 id="h1-logo">XHRIS THE BARBER</h1>
+            <h1 id="h1-logo2">HAIR STUDIO</h1>
+        </div>
+        <div id="menu_div">
+        <ul id="button">
+            <li><a href=index.html>INICIO</a></li>
+            <li><a href=galeria.html>GALERIA</a></li>
+            <li><a href=book.html>BOOK ONLINE</a></li>
+            <li><a href=contacto.html>CONTACTO</a></li>
+        </ul>
+        <div id="iconillos">
+            <a href="https://www.instagram.com/xhristhebarber/"><img src="img/insta-icon.svg" id="icons" alt="" srcset=""></a>
+            <a href=""><img src="img/tuita-icon.svg" id="icons" alt="" srcset=""></a>
+            <a href="https://www.facebook.com/Xhris-the-barber-103333081337603"><img src="img/faisbuk-icon.svg" id="icons" alt="" srcset=""></a>
+        </div>
+    </div>
+        
+    </nav>
+    
+    <div id="mostrar">
+        <a href="#" class="hide_menu" id="hide_menu"><img src="img/bars.png" class="img_show"></a>
+        <a href="#" class="show_menu" id="show_menu"><img src="img/bars.png" class="img_show"></a>
+    </div>
+
+    <img src="img/header2.png" id="img-header2">
+
+    <div id="inter-cont">
+        <img src="img/bigote.png" alt="" id="bigote">
+        <h1 id="h1-cont">XHRIS THE BARBER</h1>
+        <p>BY CHRISTOFER</p>
+    </div>
+
+    <div id="direccion">
+        <h1>SEVILLA – CAMAS</h1>
+        <div id="map">
+                <img src="img/map.png" alt="" id="prueba">
+        </div>
+        <div id="cita">
+            <img src="img/tlf.svg" alt="">
+            <p>CITA PREVIA</p>
+            <p>+34610362815</p>
+        </div>
+        <div id="direccion2">
+            <img src="img/casa.svg" alt="">
+            <h1>DIRECCIÓN</h1>
+            <p>Calle Genil, 25 - 41900 - Camas</p>
+        </div>
+        <div id="horario">
+            <img src="img/horario.svg" alt="" id="img-hor">
+            <h1>HORARIO</h1>
+            <p><img src="img/horario2.PNG" id="img-horario" alt=""></p>
+        </div>
+    </div>
+
+    <div id="info">
+
+        <div id="help">
+            <p style="font-size: 50px;">Te <b>ayudamos</b></p> <br>
+            <p style="font-size: 30px;">Escríbenos cualquier sugerencia o pregunta y te responderemos a la mayor brevedad posible</p>
+            <br> <br>
+            <img src="img/help-img.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="form">
+
+        <form class="contact-form row">
+            <div class="form-field col x-50" id="form-nombre">
+               <input id="name" class="input-text js-input" type="text" required>
+               <label class="label" for="name">Nombre</label>
+            </div>
+            <div class="form-field col x-50" id="form-email">
+               <input id="email" class="input-text js-input" type="email" required>
+               <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col x-50" id="form-tlf">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">Teléfono</label>
+             </div>
+            <div class="form-field col x-100" id="form-msg">
+               <input id="message" class="input-text js-input" type="text" required>
+               <label class="label" for="message">Mensaje</label>
+            </div>
+            <div class="form-field col x-100 align-center">
+               <input class="submit-btn" type="submit" value="Enviar">
+            </div>
+            <section title=".squaredThree">
+                <!-- .squaredThree -->
+                <div class="squaredThree">
+                  <input type="checkbox" value="None" id="squaredThree" name="check"/>
+                  <label for="squaredThree"></label>
+                </div>
+                <!-- end .squaredThree -->
+                <label id="leido">He leido y acepto el aviso legal y política de privacidad</label>
+              </section>
+              <p>Los datos personales facilitados voluntariamente por usted,
+                   a través del presente formulario web serán tratados, 
+                   por Xhris The Barber, como responsable del tratamiento, 
+                   con la finalidad de atender su solicitud, consulta, 
+                   queja o sugerencia, sin que se produzca comunicaciones 
+                   o cesiones de datos y conservados durante los plazos 
+                   necesarios para atender su solicitud. Puede usted ejercer
+                    los derechos de acceso, rectificación o supresión de sus
+                     datos, dirigiéndose a info@xhristhebarber.es, 
+                     para más información al respecto, puede consultar 
+                     nuestra Política de Privacidad
+                      en http://www.xhisthebarber.es/.</p>
+         </form>
+
+    </div>
+
+    <img src="img/logo2.png" id="logo2">
+    <footer>
+        
+      <img src="img/logo2.png" alt="">
+      <h1>SEVILLA</h1>
+      <h3> <span style="color: yellow;">CUÉNTANOS:</span> INFO@THEBARBERSHOP.ES</h3>
+
+      <a href=""><div class="tuita-icon"></div></a>
+      <a href="https://www.facebook.com/Xhris-the-barber-103333081337603"><div class="faisbuk-icon"></div></a>
+      <a href="https://www.instagram.com/xhristhebarber/"><div class="insta-icon"></div></a>
+      <h3><a href="">POLITICA DE COOKIES</a></h3>
+      <h3><a href="">AVISO LEGAL & POLÍTICA DE PRIVACIDAD</a></h3>
+
+  </footer>
+
+
+</body>
+</html>
