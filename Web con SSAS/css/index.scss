@@ -1,18 +1,39 @@
+//// @access public
+/// @author Puyana
+
 
 // Declaracion de variables
+
+/// @group colores
 $color_negro: black;
+/// @group colores
 $color_blanco: #fff;
+/// @group colores
 $color_gris: #F2F2F2;
+/// @group colores
 $background: #fefefe;
+/// @group colores
 $text: #4b507a;
+/// @group colores
 $cyan: #60daaa;
+/// @group colores
 $yellow: #fbca67;
+/// @group colores
 $orange: #ff8a30;
+/// @group colores
 $red: #f45e61;
+/// @group colores
 $purple: #6477b9;
+/// @group colores
 $blue: #0eb7da;
+
+/// @group posiciones
 $rel: relative;
+/// @group posiciones
+$abs: absolute;
+/// @group anchura
 $width: 100%;
+/// @group redes
 $redes: tuita-icon faisbuk-icon insta-icon;
 
 // Bucle each para los iconos de Redes Sociales del Footer
